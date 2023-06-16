@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="./main.css">
+    <!-- link to font awssom css -->
+    <link rel="stylesheet" href="./js/all.js ">
+    <script src="https://kit.fontawesome.com/713cefb6ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="profile">
+            <img src="./img/pexels-rostislav-uzunov-5011647.jpg" alt="" width="200px" height="200px">
+            <h1>Hassan</h1>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+ 
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#home" class="active">
+                        <i class="fa-solid fa-house"></i>Home
+                    </a>
+                </li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
+                <li><a href="#portfolio"> <i class="fa-solid fa-briefcase"> </i>Portfolio</a></li>
+                <!-- <li><a href=""><i class="fa-solid fa-server"></i>Services</a></li> -->
+                <li><a href="#contact"> <i class="fa-solid fa-envelope"> </i>Contact</a></li>
+                
+                
+
+            </ul>
+        </nav> 
+
+        <footer class="footer"  >
+            <p>&copy; Copyright 2023 <br></p>
+        </footer> 
+
+
+    </header>
+
+    <!-- mobile Nav Toggle -->
+    <i class="fa-solid fa-bars" id="menuBtn" onclick="hideText()"></i> 
+
+    <main>
+        <section id="home">
+            <div class="home-row">
+            <h1>Hi this is <br> Hassan Ondieki <Span>.</Span></h1>
+            <p>I'm a <span class="auto-input"></span> </p>
+        </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about">
+            <div class="sub-heading">About Me</div>
+            <div class="divider"></div>
+            <!-- <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id explicabo optio illum eveniet laboriosam vero, quod saepe. Rerum incidunt dolorem illum placeat ex aliquid debitis beatae quam odio culpa.
+            Fugit sapiente, nostrum quasi voluptates impedit saepe explicabo distinctio magnam minus, ullam architecto exercitationem vel minima porro doloribus ipsum ad repellendus omnis asperiores laboriosam. Consequuntur ullam doloribus inventore corrupti cum?</p> -->
+
+            <div class="about-col">
+
+                <div class="img-col">
+                    <img src="./img/hassan_portfolio_image-removebg-preview (1).png" alt="" width="200px" height="300px">
+                </div>
+            
+                <div class="info-col">
+                    <h2>Web Developer</h2>
+                    <p class="sub-para">Hi, I'm Hassan Ondieki a web de
+veloper 
+experienced in html, react, Ja
+vaScript, 
+a git create user-friendly websites and 
+applications using these tools</p>
+                    
+
+                    <!-- <div class="icon-list-col">
+                        left-side list -->
+                        <!-- <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i><strong>Age:</strong> <span>21</span></li>
+
+                                <li><i class="fa-solid fa-angle-right"></i><strong>Phone:</strong> <span>0795429778</span></li>
+
+                                <li><i class="fa-solid fa-angle-right"></i><strong>Certificate:</strong> <span>Diploma in Web Development</span></li>
+
+                                <li><i class="fa-solid fa-angle-right"></i><strong>City:</strong> <span>Nairobi</span></li>
+                            </ul> 
+                        </div>
+
+                    </div>  -->
+
+                </div>
+            </div>    
+
+        </section>
+
+        <!-- =====Portfolio Section Start  -->
+
+        <section id="portfolio">
+            <h1 class="sub-heading">Portfolio</h1>
+            <div class="divider"></div>
+            <!-- <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquam recusandae, fugit quo, voluptate sunt illo, eos magni ad quibusdam saepe maiores doloremque alias quasi! Quis similique quasi vel ipsa! </p> -->
+
+            <div class="port-row">
+                <!-- --portfolio-item 1 -->
+                <div class="port-item">
+                   <div class="port-img">
+                     <a href="https://tracker-app-hassan.netlify.app"> <img src="./img/Screenshot 2023-06-09 015804.png" alt="img" width="200px" height="200px" style="object-fit: cover;"></a>
+                   
+                   </div>  <p>tracker-app</p>
+                </div>    
+
+                <!-- --portfolio-item 2 -->
+                  <div class="port-item">
+                      <div class="port-img">
+                         <a href="https://to-do-list-hassan.netlify.app"> <img src="./img/Screenshot 2023-06-09 085807.png" alt="img" width="200px" height="200px" style="object-fit: cover;"></a>
+                      </div>
+                      <p>to-do-list</p>
+                   </div>
+
+                <!-- --portfolio-item 3 -->
+                  <div class="port-item">
+                    <div class="port-img">
+                      <a href=""> <img src="./img/Screenshot 2023-06-09 085946.png" alt="img" width="200px" height="200px" style="object-fit: cover;">    </div></a>
+                      <p>calculator </p>
+                     </div>
+
+
+                </div>
+                
+            </div>
+        </section>
+        <!-- Portfoloio Section End -->
+
+        <!-- ------------------------------------------------------------------------------------------ -->
+
+        <!-- =====Service Section Start ====== -->
+        <!-- <div id="service">
+            <h1 class="sub-heading">Service</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquam recusandae, fugit quo, voluptate sunt illo, eos magni ad quibusdam saepe maiores doloremque alias quasi! Quis similique quasi vel ipsa! </p>
+
+
+            <div class="service-row">
+                           
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-briefcase sicons"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident </p>
+                </div>
+            </div>
+
+                        
+                        <div class="service-box">
+                            <div class="icon">
+                                <i class="fa-solid fa-list-check sicons"></i>
+                            </div>
+                            <div class="ser-info">
+                                <h4>lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident </p>
+                            </div>
+                        </div>
+
+                                   
+                                    <div class="service-box">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-chart-bar sicons"></i>
+                                        </div>
+                                        <div class="ser-info">
+                                            <h4>lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident </p>
+                                        </div>
+                                    </div>
+   
+            </div>
+
+        </div> -->
+        <!-- =====Service Section End -->
+
+
+        <!-- --------------------------------------------------------------------------------------- -->
+
+        <!-- =====Contact Form Start ==================== -->
+        <section id="contact">
+            <h1 class="sub-heading">Contact</h1>
+            <div class="divider"></div>
+            <!-- <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquam recusandae, fugit quo, voluptate sunt illo, eos magni ad quibusdam saepe maiores doloremque alias quasi! Quis similique quasi vel ipsa! </p> -->
+
+            <div class="contact-row">
+
+                <!-- left col -->
+                <div class="contact-left">
+
+                    <!-- Email Box -->
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope sicon"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Email:</h4>
+                            <p>ondiekihassan5</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call Box -->
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone sicon"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Call:</h4>
+                            <p>+254795429778</p>
+                        </div>
+                    </div>
+
+                                    <!-- Call Box -->
+                                    <div class="icon-box">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-location-dot sicon"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h4>Location:</h4>
+                                            <p>Nairobi Kenya</p>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <!-- Call Box -->
+                                    <div class="icon-box">
+                                        <div class="icon">
+                                          
+                                            <i class="fa-brands fa-github sicon"></i></i>
+                                        </div>
+                                        <div class="info">
+                                            <h4>Git Hub:</h4>
+                                            <p>Hassan-dev-web</p>
+                                        </div>
+                                    </div>
+
+                                              
+
+
+                                    
+                                    
+                                    
+
+                </div>
+
+                
+                <!-- right col -->
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="text" email="email" placeholder="Your Email">
+                        <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                </div>
+
+                
+            
+            </div>
+
+
+        </section>
+
+        <!-- =======Contact Form Stop ================= -->
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/713cefb6ab.js" crossorigin="anonymous"></script>
+    <!-- Typed.js file (for typing effect) -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- link to javascript -->
+    <script src="./main.js"></script>
+    <!-- link to font awsome js -->
+    <script src="./js/all.min.js"></script>
+</body>
+</html>
