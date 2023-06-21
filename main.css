@@ -18,6 +18,100 @@
      --bgColor: #F7F7F7;
 }
 
+.nav-bar{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--bgColor);
+    padding: 12px 20px;
+    display: none;
+}
+.logo img{
+    width: 40px;
+}
+.menu{
+    display: flex;
+    
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 1px;
+     background-color: var(--color1);
+     transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after{
+    width: 100%;
+}
+
+.open-menu , .close-menu{
+    position: absolute;
+    color: var(--iconBGColor);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu{
+    top: 20px;
+    right: 20px;
+    color: blue;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 1050px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--bgColor);
+        transition: all 0.2s ease-in-out;
+        display: block;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a{padding: 10px;}
+    .open-menu , .close-menu{display:block}
+    #check:checked ~ .menu{right: 0;}
+}
+
 header{
     height: 100vh; 
     width: 300px;
@@ -148,7 +242,7 @@ header .footer {
     transition: 0.4s;
 }
 
-#menuBtn{
+/* #menuBtn{
     position:fixed;
     top: 25px;
     right: 25px;
@@ -163,7 +257,29 @@ header .footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0, 20px);  
     display: none;
     z-index: 999;
+} */
+
+header .open-menu , header .close-menu{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 45px;
+    width: 60px;
+    height: 50px;
+    color: var(--themeColor);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
 }
+
+#check{
+    display: none;
+    right: 50px;
+}
+
 
 
  @media only screen and (max-width: 1050px){
@@ -171,14 +287,20 @@ header .footer {
         left: -300px;
     }
 
+    .nav-bar{
+        display: block;
+    }
+
     header .footer {
         left: -300px;
     }
     #menuBtn{
-
         display: block;
-
     }
+    header .open-menu , header .close-menu{
+        display: block;
+    }
+    /* #check:checked ~ .{left: 300px;} */
  }
 
 
