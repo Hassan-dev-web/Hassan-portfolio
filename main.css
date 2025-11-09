@@ -384,6 +384,12 @@ header .open-menu , header .close-menu{
         font-size: 30px;
         font-weight: 500;
     }
+    #home{
+         background-image: url(./img/pexels-rostislav-uzunov-5011647.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+    }
 
 }
 
