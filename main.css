@@ -376,7 +376,7 @@ header .open-menu , header .close-menu{
     border-bottom: 4px solid var(--themeColor) ;
 }
 
-@media only screen and (max-width: px){
+@media only screen and (max-width: 450px){
     #home .home-row h1{
         font-size: 35px;
         letter-spacing: -1px;
@@ -386,6 +386,13 @@ header .open-menu , header .close-menu{
         font-size: 30px;
         font-weight: 500;
     }
+     #home .home-row{
+
+  position: absolute;
+  top: 100px;
+  left: -100px;
+ }
+
     /* #home{
          background-image: url(./img/pexels-rostislav-uzunov-5011647.jpg);
          background-position: -300px  0px;
